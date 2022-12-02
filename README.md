@@ -29,6 +29,34 @@ As a viewer I want to...
 2. click on and see events
 3. be able to comment on events
 
+# Route Tables
+
+## Authentication
+| Type  | URL Pattern | Controller  |
+|-------|-------------|-------------|
+| POST  | '/sign-up/'  | 'users#signup'|
+| POST  | '/sign-in/'  | 'users#signin'|
+| PATCH | '/change-password/'  | 'users#changepw'|
+| DELETE | '/sign-out/'  | 'users#signout'|
+
+## Timelines
+| Type  | URL Pattern | Controller  |
+|-------|-------------|-------------|
+| POST  | '/timelines'  | 'timeline#create'|
+| GET  | '/timelines/'  | 'timelines#inedex'|
+| GET  | '/timelines/:timelineId'  | 'timelines#show'|
+| PATCH | '/timeline/:timelineId'  | 'timeline#update'|
+| DELETE | '/timeline/:timelineId'  | 'timeline#delete'|
+
+## Events
+| Type  | URL Pattern | Controller  |
+|-------|-------------|-------------|
+| POST  | '/events'  | 'event#create'|
+| GET  | '/events/'  | 'events#inedex'|
+| GET  | '/events/:eventId'  | 'events#show'|
+| PATCH | '/event/:eventId'  | 'event#update'|
+| DELETE | '/event/:eventId'  | 'event#delete'|
+
 # Wireframes
 
 ![Bear_Necessity_Wireframe1](https://user-images.githubusercontent.com/112370685/203104822-d943a1bb-823b-4575-a42a-fabd5468b897.PNG)

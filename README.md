@@ -7,7 +7,7 @@
 1. HTML
 2. Python
 3. Django
-4. Express
+4. React
 
 # User Stories
 As an owner, I want to...
